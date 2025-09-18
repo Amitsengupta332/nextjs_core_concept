@@ -1,4 +1,5 @@
 import Image from "next/image";
+import nextImage from '../../assets/Screenshot.png'
 
 const GalleryPage = () => {
   return (
@@ -20,6 +21,16 @@ const GalleryPage = () => {
         alt="Image Optimzation"
         width={500}
         height={500}
+        // fill={true}
+        className="mx-auto"
+      />
+      <h1 className="text-3xl text-center py-1 my-1">Local Image tag</h1>
+      <Image
+        src={nextImage}
+        alt="Image Optimzation"
+        width={500}
+        height={500}
+        // fill={true}
         className="mx-auto"
       />
     </div>
